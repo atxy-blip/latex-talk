@@ -1,9 +1,9 @@
 \XeTeXgenerateactualtext=1
-\ifdefined\HANDOUT
-  \documentclass[fontset=none,handout]{ctexbeamer}
-\else
+% \ifdefined\HANDOUT
+  % \documentclass[fontset=none,handout]{ctexbeamer}
+% \else
   \documentclass[fontset=none]{ctexbeamer}
-\fi
+% \fi
 
 \usepackage{%
   array,
@@ -14,6 +14,7 @@
   hologo,
   listings,
   multicol,
+  njuvisual,
   qrcode,
   ragged2e,
   siunitx,
@@ -61,7 +62,7 @@
     \vfill
   \end{minipage}}
 \setbeamertemplate{title graphic}{%
-  \vbox to 0pt {\smash{\raisebox{-128pt}{\inserttitlegraphic}}}%
+  \vbox to 0pt {\smash{\raisebox{-140pt}{\inserttitlegraphic}}}%
   \nointerlineskip}
 \setbeamertemplate{frame numbering}{\zhnumber[style=Financial]{\insertframenumber}}
 \setbeamertemplate{itemize/enumerate subbody begin}{\footnotesize}
@@ -110,7 +111,7 @@
 \newfontfamily\LatinRomanXVII{lmroman17-regular.otf}
 \newfontfamily\LibertinusKey{LibertinusKeyboard-Regular.otf}
 
-\newfontfamily\Avenir{Avenir Next}
+\newfontfamily\Avenir{Avenir Next W1G}
 \newfontfamily\Courier{Courier}
 \newfontfamily\Helvetica{Helvetica Neue Light}
 \newfontfamily\Menlo{Menlo}
@@ -124,9 +125,9 @@
 \newCJKfontfamily\KaiTi{FZKai-Z03}
 \newCJKfontfamily\SourceHanSerif{Source Han Serif SC SemiBold}
 \newCJKfontfamily\WaWa{Wawati SC}
-\newfontfamily\SimHei{simhei.ttf}[Path=./fonts/, AutoFakeBold=4, AutoFakeSlant]
+\newfontfamily\SimHei{SimHei}[AutoFakeBold=4, AutoFakeSlant]%{simhei.ttf}[Path=./fonts/, AutoFakeBold=4, AutoFakeSlant]
 \newfontfamily\TimesNewRoman{Times New Roman}
-\newfontfamily\xkcd{xkcd-script.ttf}[Path=./fonts/, Ligatures=TeX]
+\newfontfamily\xkcd{xkcd Script}[Ligatures=TeX]%{xkcd-script.ttf}[Path=./fonts/, Ligatures=TeX]
 
 % PDF bookmark
 \apptocmd{\beamer@@frametitle}{%
@@ -212,10 +213,10 @@
 % Information
 \title{现代 \LaTeX{} 入门讲座}
 \subtitle{Modern \LaTeX{} in a Nutshell}
-\author{曾祥东}
-\institute{复旦大学\quad 物理系}
+\author{熊煜}
+\institute{南京大学\\ 化学化工学院}
 \date{\zhtoday}
-\titlegraphic{\qrcode[hyperlink, height=1.6cm]{https://github.com/stone-zeng/latex-talk/}}
+\titlegraphic{\qrcode[hyperlink, height=1.6cm]{https://github.com/atxy-blip/latex-talk/}\njuemblem[white!85!gray]{12cm}{!}}
 
 \begin{document}
 

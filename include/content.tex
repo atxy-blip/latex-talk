@@ -253,9 +253,9 @@ Time-dependent Schrödinger equation can be written as
     \begin{figure}
       \centering
       % 可指定宽度、高度等选项
-      \includegraphics[...]{fudan-logo.pdf}
-      \caption{Logo of Fudan University}
-      \label{fig:fudan-logo}
+      \includegraphics[...]{nju-logo.pdf}
+      \caption{Logo of Nanjing University}
+      \label{fig:nju-logo}
     \end{figure}
   \end{texcode}
 \end{column}
@@ -263,9 +263,9 @@ Time-dependent Schrödinger equation can be written as
 \begin{column}{0.3\textwidth}
   \begin{figure}
     \centering
-    \fduemblem+[x=0.1pt, y=0.1pt, color=FudanBlue]
-    \caption{\textcolor{keyword}{Figure \thefigure:} Logo of Fudan University}
-    \label{fig:fudan-logo_}  % Avoid duplicate labels warning
+    \njuemblem{0.6\textwidth}{!}
+    \caption{\textcolor{keyword}{Figure \thefigure:} Logo of Nanjing University}
+    \label{fig:nju-logo_}  % Avoid duplicate labels warning
   \end{figure}
 \end{column}
 \end{columns}
@@ -376,7 +376,7 @@ Time-dependent Schrödinger equation can be written as
 
     \begin{itemize}
       \item 被引处：|\label|
-      \item 引用处：|\ref|、|\eqref| 等（如图~\textcolor{emph1}{\ref{fig:fudan-logo_}}、
+      \item 引用处：|\ref|、|\eqref| 等（如图~\textcolor{emph1}{\ref{fig:nju-logo_}}、
             表~\textcolor{emph1}{\ref{tab:china-population_}}）
       \item 用有意义的标签：|\label{eq:euler-lagrange-eq}|
       \item 需多次编译——推荐 \pkg{latexmk}
